@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Jaywalking | Systems That Actually Work</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                black: '#141414',
+                cream: '#f1f0e8',
+                grey: '#a0a6a6',
+                orange: '#f06836',
+                peach: '#e3855a',
+                tan: '#e8c3aa',
+                teal: '#194444',
+                sage: '#768b8b'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 1s ease-out forwards',
+              'slide-up': 'slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'pulse-glow': 'pulseGlow 4s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(40px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              pulseGlow: {
+                '0%, 100%': { opacity: '0.3' },
+                '50%': { opacity: '0.6' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f1f0e8;
+        color: #141414;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f0e8;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #a0a6a6;
+        border-radius: 10px;
+        border: 2px solid #f1f0e8;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #f06836;
+      }
+      .perspective-text {
+        transform-style: preserve-3d;
+        perspective: 1000px;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px) saturate(180%);
+        border: 1px solid rgba(25, 68, 68, 0.05);
+      }
+      .dark-glass-card {
+        background: rgba(25, 68, 68, 0.2);
+        backdrop-filter: blur(20px) saturate(180%);
+        border: 1px solid rgba(241, 240, 232, 0.05);
+      }
+      .orange-glow {
+        box-shadow: 0 0 40px -10px rgba(240, 104, 54, 0.2);
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "react": "https://esm.sh/react@19.0.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.463.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
