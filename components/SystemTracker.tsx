@@ -52,7 +52,7 @@ const SystemTracker: React.FC = () => {
             </div>
           </div>
 
-          <button className="px-8 py-3 bg-brand-cream/5 border border-brand-cream/10 rounded-xl hover:bg-brand-orange hover:border-brand-orange hover:text-white transition-all text-xs font-bold uppercase tracking-widest text-brand-cream">
+          <button className="btn-angular px-8 py-3 bg-brand-cream/5 border border-brand-cream/10 hover:bg-brand-orange hover:border-brand-orange hover:text-white transition-all text-xs font-bold uppercase tracking-widest text-brand-cream">
             Get Early Access
           </button>
         </div>

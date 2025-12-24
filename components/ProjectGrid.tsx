@@ -9,7 +9,7 @@ const ProjectGrid: React.FC = () => {
       {PROJECTS.map((project) => (
         <div 
           key={project.id} 
-          className="group relative overflow-hidden rounded-[2.5rem] bg-brand-teal/5 border border-brand-teal/10 aspect-[4/5] shadow-xl"
+          className="group relative overflow-hidden rounded-[2.5rem] bg-brand-orange/5 border border-brand-orange/10 aspect-[4/5] shadow-xl"
         >
           <img 
             src={project.imageUrl} 

@@ -13,6 +13,29 @@ import {
 
 export const HERO_VIDEO_URL = 'https://yntowivdfwmsygfrptrx.supabase.co/storage/v1/object/public/Webp%20Sequence/hero_tech_video.mp4';
 
+export const ROUTES = {
+  HOME: '/',
+  PROJECTS: '/projects',
+  SERVICES: '/services',
+  ABOUT: '/about',
+  CONTACT: '/contact',
+} as const;
+
+export const FOOTER_LINKS = {
+  quickLinks: [
+    { label: 'About Mission', path: ROUTES.ABOUT },
+    { label: 'Project Portfolio', path: ROUTES.PROJECTS },
+    { label: 'Services', path: ROUTES.SERVICES },
+    { label: 'Contact', path: ROUTES.CONTACT },
+  ],
+  support: [
+    { label: 'Contact Support', path: ROUTES.CONTACT },
+    { label: 'Privacy Policy', path: '#' },
+    { label: 'Terms of Service', path: '#' },
+    { label: 'Cookie Policy', path: '#' },
+  ],
+};
+
 export const SERVICES: Service[] = [
   {
     id: '1',

@@ -23,7 +23,9 @@
                 peach: '#e3855a',
                 tan: '#e8c3aa',
                 teal: '#194444',
-                sage: '#768b8b'
+                sage: '#768b8b',
+                blue: '#00d4ff',
+                'blue-dark': '#0099cc'
               }
             },
             fontFamily: {
@@ -89,6 +91,46 @@
       }
       .orange-glow {
         box-shadow: 0 0 40px -10px rgba(240, 104, 54, 0.2);
+      }
+      /* Angular Button Styles */
+      .btn-angular {
+        position: relative;
+        clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-angular:hover {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 8% 100%);
+        transform: translateY(-2px);
+      }
+      .btn-angular-alt {
+        position: relative;
+        clip-path: polygon(0% 0%, 92% 0%, 100% 50%, 92% 100%, 0% 100%);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-angular-alt:hover {
+        clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%, 8% 50%);
+        transform: scale(1.02);
+      }
+      .btn-cut-corner {
+        position: relative;
+        clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+        transition: all 0.3s ease;
+      }
+      .btn-cut-corner:hover {
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
+        transform: translateY(-2px);
+      }
+      .btn-slash {
+        position: relative;
+        transform: skewX(-8deg);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-slash:hover {
+        transform: skewX(0deg) scale(1.05);
+      }
+      .btn-slash > span {
+        display: inline-block;
+        transform: skewX(8deg);
       }
     </style>
 <script type="importmap">
