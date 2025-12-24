@@ -27,14 +27,15 @@ const BookSection: React.FC = () => {
           </button>
         </div>
         <div className="order-1 lg:order-2 flex justify-center">
-          <div className="w-64 h-80 md:w-80 md:h-[450px] bg-gradient-to-br from-brand-orange to-brand-peach rounded-lg shadow-2xl transform rotate-6 hover:rotate-0 transition-transform duration-500 flex flex-col items-center justify-between p-8 text-center relative overflow-hidden">
+          <div className="w-64 h-80 md:w-80 md:h-[450px] bg-gradient-to-br from-brand-orange to-brand-peach rounded-lg shadow-2xl transform rotate-6 hover:rotate-0 transition-transform duration-500 flex flex-col items-center justify-center p-8 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-brand-teal/20 mix-blend-multiply rounded-lg"></div>
-            <div className="relative z-10 text-white/20 font-black text-xl uppercase tracking-[0.3em]">Digital Jaywalking</div>
-            <div className="relative z-10 space-y-2">
+            <div className="relative z-10 space-y-4">
               <div className="text-white font-black text-3xl leading-none drop-shadow-md">THE INVISIBLE ARCHITECT</div>
-              <div className="text-white/60 text-[10px] uppercase font-bold tracking-widest italic">Building Systems Without Code</div>
+              <div className="text-white/70 text-[10px] uppercase font-bold tracking-widest italic">Building Systems Without Code</div>
+              <div className="mt-4 pt-4 border-t border-white/30">
+                <div className="text-white font-bold text-lg tracking-wide drop-shadow-lg">Lenise Kenney</div>
+              </div>
             </div>
-            <div className="relative z-10 w-12 h-1 bg-white/40 mx-auto" />
           </div>
         </div>
       </div>
